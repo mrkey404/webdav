@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+cowsay webdav uploader
+echo -e "C.FB: Rizki Key"
+echo -e "C.MAIL: ngawiexploiter@hotmail.com"
+echo -e ""
+read -p "your script: " loss1
+read -p "target: " loss
+curl -T $loss1 $loss
