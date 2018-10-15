@@ -1,0 +1,15 @@
+#!/bin/bash
+read -p "lanjutkan?[Y/n]: " loss
+
+if [ $loss = Y ] || [ $loss = y ];
+then
+termux-setup-storage
+shopt -s autocd
+pkg install curl
+echo -e "\033[33;1mDone!\033[37;1m..."
+fi
+
+if [ $loss = n ]
+then
+exit
+fi
